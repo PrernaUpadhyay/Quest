@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+     <div class="gif.container">
+        <img src="cutee.gif">
+     </div>
+     <div>
+        <h1 class="header_text."> Wanna grab some Pizza with me?</h1> <br>
+     </div> <br>
+
+     
+     <div class="button"> <br>
+        <button class="btn" id="yesButton" onclick="nextPage()"> YES </button>
+        <button class="btn" id="noButton" onmouseover="movebutton()"> NO </button>
+   
+<script src="sheet.js">
+   
+</script>
+     <script>
+      function nextPage() {
+         window.location.href = "yes.html" ;
+      }
+
+      function movebutton() {
+         var x = Math.random() * (windoe.innerWidth - document.getElementById('nobutton').offsetWidth);
+         var y = Math.random() * (windoe.innerWidth - document.getElementById('nobutton').offsetWidth);
+         document.getElementById("nobutton").style.left = '$(x)px' ;
+         document.getElementById("nobutton").style.top = '$(y)px' ;
+      }
+
+      
+     </script>
+     </div>
+
+     </div>
+
+</body>
+</html>
